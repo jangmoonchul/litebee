@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>LiteBee</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/jquery-ui-1.9.2.custom.css">
+    <link rel="stylesheet" href="./css/jquery.fileupload.css">
+    <link rel="stylesheet" href="./css/jquery.fileupload-ui.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<a href="http://www.makerfire.com" class="v4-tease">Coding Drone for MakerFire LiteBee</a>
+<div class="container">
+<p>QuadCopter Control</p>
+<div style="margin-left: 20%;margin-top: 10px" id="sim-panel">
+<div class="row" style="top:10px">
+    <button class="btn btn-default col-md-3" id="motorD">Motor 4</button>
+    <button class="btn btn-default col-md-3" style="margin-left: 20%" id="motorC">Motor 2</button>
+    <button class="btn btn-default col-md-2" id="armflight">ARM</button>
+	<button class="btn btn-default col-md-1" id="add">+</button>
+	<button class="btn btn-default col-md-1" id="dec">-</button>
+</div>
+<div class="row">
+    <img src="./img/quadicon.png" alt="quad-x" class="img-rounded col-md-3" style="margin-left: 6%">
+</div>
+<div class="row" style="top:10px">
+    <button class="btn btn-default col-md-3" id="motorA">Motor 3</button>
+    <button class="btn btn-default col-md-3" style="margin-left: 20%" id="motorB">Motor 1</button>
+    <button class="btn btn-default col-md-3"  id="disarm">DISARM</button>
+</div>
+</div>
+<hr/>
+<div class="group" id="comm-group">
+    <p>Serial Connection</p>
+    <div class="row-fluid" style="margin-top: 10px">
+        <div class="btn-group" id="serial-port">
+            <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="serial-current" style="width: 185px">
+                COM1<span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" id="serial-dropdown">
+
+            </ul>
+        </div>
+        <a href="#" class="btn btn-primary" id="btnConnect">connect</a>
+    </div>
+</div>
+<hr/>
+<p>ScratchX to Arduino</p>
+<p id="filename"></p>
+<div class="row-fluid" style="margin-top: 10px">
+    <span class="col-md-4 btn btn-primary fileinput-button">
+        <span>Upload *.Sbx</span>
+        <!-- The file input field used as target for the file upload widget -->
+        <input id="fileupload" type="file" multiple="" name="filearg">
+    </span>
+    <a class="btn btn-default" target="_blank" href="#" id="saveino" style="background-color: #00979D;border-color: #7FCBCD;"  disabled="disabled"><img src="./img/Arduino.png" style="height: 20px"/>
+        Save Ino File</a>
+</div>
+
+
+
+<button id="scratchx-start" class="btn btn-info" type="submit">
+    <img src="./img/scratchx-logo.png"/>
+</button>
+</div>
+<script src="./js/serial.js"></script>
+<script src="./js/vendor/jquery.min.js"></script>
+ <script src="./js/vendor/bootstrap.min.js"></script>
+<script src="./js/vendor/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="./js/jquery.fileupload.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

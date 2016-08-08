@@ -1,0 +1,21 @@
+{
+   "app": {
+      "background": {
+         "scripts": [ "background.js" ]
+      }
+   },
+   "description": "ScratchX for LiteBee",
+   "externally_connectable": {
+      "matches": [ "*://scratchx.org/*" ]
+   },
+   "icons": {
+      "256": "litebee.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzr2CeTbxYhM4c51oYtaR8g/xdid67aCuvLr2wklggebUpn3JR8qccUMjvbFbOXCz15K0liMEdQhJRFzfansmcmqkq7pfmBTFLSqSqmFu90TEyB/EjvbnHix900925tOlQDlu460AMOE4U5Hru/ucpsUXOakxZAX9/qjSuvG/bEASwGhBGyTIRgudwK/Q9PcX/F8kPFfyai6Zig8lXvN/rO/8eYcerTrqLpQBBop5F9DhaUnB0abNyO3I2U/tkVrMSoM79TKQbZaw7djVabFEsVVFHQKgjpYDLnJbCOApkeiecQuV6FggCAMWfLRWfDx9wY9j1sC9WErRogV/hP37XwIDAQAB",
+   "manifest_version": 2,
+   "name": "LiteBee",
+   "offline_enabled": true,
+   "permissions": [ "serial", "fileSystem", "alarms", "\u003Call_urls>" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.9"
+}
