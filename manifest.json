@@ -6,7 +6,7 @@
    },
    "description": "ScratchX for LiteBee",
    "externally_connectable": {
-      "matches": [ "*://scratchx.org/*" ]
+      "matches": [ "*://scratchx.org/*","*://game.litebee.com/*" ]
    },
    "icons": {
       "256": "litebee.png"
